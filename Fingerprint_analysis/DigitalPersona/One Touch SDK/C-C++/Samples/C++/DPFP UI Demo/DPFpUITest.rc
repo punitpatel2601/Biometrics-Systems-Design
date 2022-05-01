@@ -1,0 +1,219 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DPFPUITESTDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DPFPUITESTDIALOG DIALOGEX 0, 0, 163, 300
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DPFP UI Demo"
+FONT 8, "Verdana", 400, 0, 0x0
+BEGIN
+    GROUPBOX        " Enrollment ",IDC_STATIC,4,3,152,93
+    LTEXT           "Fingerprint Mask",IDC_STATIC,12,15,72,8
+    EDITTEXT        IDC_EDIT_MASK,124,15,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Max. Enrolled Fingerprint Count",IDC_STATIC,12,31,108,12
+    EDITTEXT        IDC_EDIT_MAX_COUNT,124,31,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        " Callback Return Value ",IDC_STATIC,8,47,144,25
+    CONTROL         "Success",IDC_RADIO_ENROLL_SUCCESS,"Button",BS_AUTORADIOBUTTON | WS_GROUP,16,60,40,8
+    CONTROL         "Retry",IDC_RADIO_ENROLL_FAIL,"Button",BS_AUTORADIOBUTTON,68,60,28,8
+    CONTROL         "Abort",IDC_RADIO_ENROLL_ABORT,"Button",BS_AUTORADIOBUTTON,112,60,28,8
+    PUSHBUTTON      "&Enroll Fingerprints",IDC_BUTTON_ENROLL,44,76,72,16
+    GROUPBOX        " Verification ",IDC_STATIC,4,100,152,172
+    LTEXT           "Custom Caption",IDC_STATIC,12,112,60,8
+    EDITTEXT        IDC_EDIT_CAPTION,76,112,76,12,ES_AUTOHSCROLL
+    LTEXT           "Custom Text",IDC_STATIC,12,128,48,8
+    EDITTEXT        IDC_EDIT_TEXT,76,128,76,12,ES_AUTOHSCROLL
+    LTEXT           "Custom Banner Path\\.BMP",IDC_STATIC,12,144,60,16
+    EDITTEXT        IDC_EDIT_BANNER,76,144,76,12,ES_AUTOHSCROLL
+    GROUPBOX        " On Error, Callback Return Value ",IDC_STATIC,8,165,144,24
+    CONTROL         "Retry",IDC_RADIO_VERIFY_FAIL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,32,177,34,8
+    CONTROL         "Abort",IDC_RADIO_VERIFY_ABORT,"Button",BS_AUTORADIOBUTTON,88,177,34,8
+    GROUPBOX        " Return Values ",IDC_STATIC,8,196,144,46
+    LTEXT           "Feature set matched?",IDC_STATIC,12,208,71,8
+    CONTROL         "",IDC_CHECK_IS_MATCHED,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,88,208,8,10
+    LTEXT           "False Accept Rate",IDC_STATIC,12,223,59,8
+    EDITTEXT        IDC_EDIT_FAR,88,223,60,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "&Verify Fingerprint",IDC_BUTTON_VERIFY,44,250,72,16
+    DEFPUSHBUTTON   "&Quit",IDOK,44,278,72,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "Res\\Dplogo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "DPFpUITest"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+// Generic strings definition
+#define COMPANY_NAME            "DigitalPersona, Inc.\0"
+#define COPYRIGHT_STRING        "Copyright \251 DigitalPersona, Inc. 1996-2009\0"
+#define PRODUCT_NAME            "DigitalPersona One Touch SDK\0"
+#define DIGITAL_PERSONA_U_ARE_U "DigitalPersona®\r\nU.are.U®\r\nOne Touch®\0"
+#define COMMENTS                "\0"
+#define OLE_SELF_REGISTER       "\0"
+
+// for the GetVersion in the code (use by the programmer)
+#define GET_VER_MAJOR_PROD      1
+#define GET_VER_MINOR_PROD      4
+#define GET_VER_REVIS_PROD      0
+
+// for the GetVersion in the code (use by the programmer)
+#define GET_VER_MAJOR_FILE      1
+#define GET_VER_MINOR_FILE      4
+#define GET_VER_REVIS_FILE      0
+
+#define GET_VER_BUILD           888
+
+#define PRIVATE_BUILD           "\0"
+#define SPECIAL_BUILD           "\0"
+
+// for the file version in the RC
+#define FILE_VER_NB1            GET_VER_MAJOR_FILE
+#define FILE_VER_NB2            GET_VER_MINOR_FILE
+#define FILE_VER_NB3            GET_VER_REVIS_FILE
+#define FILE_VER_NB4            GET_VER_BUILD
+
+// for the product version in the RC
+#define PROD_VER_NB1            GET_VER_MAJOR_PROD
+#define PROD_VER_NB2            GET_VER_MINOR_PROD
+#define PROD_VER_NB3            GET_VER_REVIS_PROD
+#define PROD_VER_NB4            GET_VER_BUILD
+
+#define VER_NUMBER_HELPER(x) #x
+#define VER_NUMBER(x1,x2,x3,x4) VER_NUMBER_HELPER(x1) "." VER_NUMBER_HELPER(x2) "." VER_NUMBER_HELPER(x3) "." VER_NUMBER_HELPER(x4) "\0"
+
+#define CD_FILEOS               VOS__WINDOWS32
+
+#ifndef _MAC
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO     VERSIONINFO
+FILEVERSION         FILE_VER_NB1, FILE_VER_NB2, FILE_VER_NB3, FILE_VER_NB4
+PRODUCTVERSION      PROD_VER_NB1, PROD_VER_NB2, PROD_VER_NB3, PROD_VER_NB4
+FILEFLAGSMASK       VS_FFI_FILEFLAGSMASK
+FILEFLAGS           0
+FILEOS              CD_FILEOS
+FILETYPE            VFT_DLL
+FILESUBTYPE         VFT2_UNKNOWN
+
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+	BLOCK "000004E4"              // Lang=US English, ChardSet=Windows Multilingual
+        BEGIN
+            VALUE "FileDescription", "UI API"
+            VALUE "InternalName", "DPFpUI.dll"
+            VALUE "OriginalFilename", "DPFpUI.dll"
+            VALUE "ProductName", "One Touch for Windows"
+            VALUE "CompanyName",      COMPANY_NAME
+            VALUE "LegalCopyright",   COPYRIGHT_STRING
+			VALUE "FileVersion",      VER_NUMBER(FILE_VER_NB1, FILE_VER_NB2, FILE_VER_NB3, FILE_VER_NB4)
+			VALUE "ProductVersion",   VER_NUMBER(PROD_VER_NB1, PROD_VER_NB2, PROD_VER_NB3, PROD_VER_NB4)
+            VALUE "LegalTrademarks",  DIGITAL_PERSONA_U_ARE_U
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0000, 1252
+    END
+END
+
+#endif    // !_MAC
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

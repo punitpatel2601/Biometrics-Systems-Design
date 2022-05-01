@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: com.digitalpersona.onetouch.ui.swing.sample.UISupport.MainForm
+Class-Path: dpotjni.jar DPOTAPI.jar DPFPEnrollment.jar DPFPVerification.jar
+

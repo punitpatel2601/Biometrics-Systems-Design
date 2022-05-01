@@ -1,0 +1,260 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SAMPLEREG_DIALOG DIALOGEX 0, 0, 350, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Fingerprint Enrollment"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC_DRAWAREA_SIZE,"Static",SS_BLACKRECT | NOT WS_VISIBLE,7,7,130,182
+    CONTROL         "",IDC_STATIC_DRAWAREA,"Static",SS_BITMAP,7,7,15,13
+    LTEXT           "Prompt:",IDC_STATIC,144,4,197,8
+    EDITTEXT        IDC_EDIT_PROMPT,144,12,197,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Status:",IDC_STATIC,144,32,197,8
+    DEFPUSHBUTTON   "Close",IDOK,293,197,50,14
+    LISTBOX         IDC_STATUS,146,40,197,149,LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Fingerprint",IDC_STATIC,7,197,43,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_IMAGE_NUM,50,197,15,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "of",IDC_STATIC,71,197,9,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_IMAGE_TOTAL,84,197,20,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_SAMPLEVER_DIALOG DIALOGEX 0, 0, 352, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Fingerprint Verification"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC_DRAWAREA_SIZE,"Static",SS_BLACKRECT | NOT WS_VISIBLE,7,7,139,146
+    CONTROL         "",IDC_STATIC_DRAWAREA,"Static",SS_BITMAP,7,7,16,14
+    LTEXT           "Prompt:",IDC_STATIC,154,7,191,8
+    EDITTEXT        IDC_EDIT_PROMPT,154,15,191,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Status:",IDC_STATIC,154,33,191,8
+    LTEXT           "False Accept Probability:",IDC_STATIC,154,125,84,14,SS_CENTERIMAGE
+    EDITTEXT        IDE_PROBABILITY,238,125,107,14,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "Close",IDOK,295,154,50,14
+    LISTBOX         IDC_STATUS,154,41,191,72,LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MAIN DIALOGEX 0, 0, 240, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fingerprint Enrollment and Verification Sample"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Fingerprint Enrollment",IDC_FP_REGISTRATION,7,7,144,14
+    PUSHBUTTON      "Fingerprint Verification",IDC_FP_VERIFICATION,7,28,144,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,47,144,1,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Save Fingerprint Enrollment Template",IDC_SAVE_TEMPLATE,7,53,144,14
+    PUSHBUTTON      "Read Fingerprint Enrollment Template",IDC_READ_TEMPLATE,7,74,144,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,93,144,1,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Close",IDCANCEL,101,108,50,14
+    CTEXT           "Fingerprint Enrollment Template Loaded",IDC_TEMPLATE_LOADED,165,38,68,24,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SAMPLEREG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        VERTGUIDE, 50
+        VERTGUIDE, 146
+        VERTGUIDE, 155
+        VERTGUIDE, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+        HORZGUIDE, 84
+        HORZGUIDE, 117
+    END
+
+    IDD_SAMPLEVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 345
+        VERTGUIDE, 27
+        VERTGUIDE, 154
+        VERTGUIDE, 168
+        VERTGUIDE, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+        HORZGUIDE, 55
+        HORZGUIDE, 81
+        HORZGUIDE, 165
+    END
+
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        VERTGUIDE, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "Res\\Dplogo.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+// Generic strings definition
+#define COMPANY_NAME            "DigitalPersona, Inc.\0"
+#define COPYRIGHT_STRING        "Copyright \251 DigitalPersona, Inc. 1996-2009\0"
+#define PRODUCT_NAME            "DigitalPersona One Touch SDK\0"
+#define DIGITAL_PERSONA_U_ARE_U "DigitalPersona®\r\nU.are.U®\r\nOne Touch®\0"
+#define COMMENTS                "\0"
+#define OLE_SELF_REGISTER       "\0"
+
+// for the GetVersion in the code (use by the programmer)
+#define GET_VER_MAJOR_PROD      1
+#define GET_VER_MINOR_PROD      4
+#define GET_VER_REVIS_PROD      0
+
+// for the GetVersion in the code (use by the programmer)
+#define GET_VER_MAJOR_FILE      1
+#define GET_VER_MINOR_FILE      4
+#define GET_VER_REVIS_FILE      0
+
+#define GET_VER_BUILD           888
+
+#define PRIVATE_BUILD           "\0"
+#define SPECIAL_BUILD           "\0"
+
+// for the file version in the RC
+#define FILE_VER_NB1            GET_VER_MAJOR_FILE
+#define FILE_VER_NB2            GET_VER_MINOR_FILE
+#define FILE_VER_NB3            GET_VER_REVIS_FILE
+#define FILE_VER_NB4            GET_VER_BUILD
+
+// for the product version in the RC
+#define PROD_VER_NB1            GET_VER_MAJOR_PROD
+#define PROD_VER_NB2            GET_VER_MINOR_PROD
+#define PROD_VER_NB3            GET_VER_REVIS_PROD
+#define PROD_VER_NB4            GET_VER_BUILD
+
+#define VER_NUMBER_HELPER(x) #x
+#define VER_NUMBER(x1,x2,x3,x4) VER_NUMBER_HELPER(x1) "." VER_NUMBER_HELPER(x2) "." VER_NUMBER_HELPER(x3) "." VER_NUMBER_HELPER(x4) "\0"
+
+#define CD_FILEOS               VOS__WINDOWS32
+
+#ifndef _MAC
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO     VERSIONINFO
+FILEVERSION         FILE_VER_NB1, FILE_VER_NB2, FILE_VER_NB3, FILE_VER_NB4
+PRODUCTVERSION      PROD_VER_NB1, PROD_VER_NB2, PROD_VER_NB3, PROD_VER_NB4
+FILEFLAGSMASK       VS_FFI_FILEFLAGSMASK
+FILEFLAGS           0
+FILEOS              CD_FILEOS
+FILETYPE            VFT_DLL
+FILESUBTYPE         VFT2_UNKNOWN
+
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+	BLOCK "000004E4"              // Lang=US English, ChardSet=Windows Multilingual
+        BEGIN
+            VALUE "FileDescription", "UI API"
+            VALUE "InternalName", "DPFpUI.dll"
+            VALUE "OriginalFilename", "DPFpUI.dll"
+            VALUE "ProductName", "One Touch for Windows"
+            VALUE "CompanyName",      COMPANY_NAME
+            VALUE "LegalCopyright",   COPYRIGHT_STRING
+			VALUE "FileVersion",      VER_NUMBER(FILE_VER_NB1, FILE_VER_NB2, FILE_VER_NB3, FILE_VER_NB4)
+			VALUE "ProductVersion",   VER_NUMBER(PROD_VER_NB1, PROD_VER_NB2, PROD_VER_NB3, PROD_VER_NB4)
+            VALUE "LegalTrademarks",  DIGITAL_PERSONA_U_ARE_U
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0000, 1252
+    END
+END
+
+#endif    // !_MAC
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

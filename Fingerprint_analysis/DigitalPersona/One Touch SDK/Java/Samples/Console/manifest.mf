@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: com.digitalpersona.onetouch.sampleapp.SampleApp
+Class-Path: dpotjni.jar DPOTAPI.jar
+
+
